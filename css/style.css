@@ -70,3 +70,12 @@ h3{
     flex-grow: 1;
     margin: 15em 0 0 0;
 }
+
+.timePeriod{
+	border: solid 1px #5800FF;
+	justify-content: space-evenly;
+}
+.time{
+	border: solid 1px #5800FF;
+	/* width:100%; */
+}
