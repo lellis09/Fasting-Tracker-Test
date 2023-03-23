@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -11,65 +13,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-xl ">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand font-2" href="#">Dream Storm Factory</a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact-me">Contact</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
-             
-            </ul>
-           
-          </div>
-        </div>
-      </nav>
+
+  
     <!-- Need a place to input day? -->
     <h1> When Can I eat?</h1>
     <h2> What's Your Fasting Type?</h2>
-<div class="timePeriod">
-    <h3> 12 hour</h3>
-    <h3> 14/10</h3>
-    <h3> 16/8</h3>
-    <h3> 5:2</h3>
-    <h3> Alternate Day</h3>
-    <h3> 24 hours or Eat: Stop: Eat</h3>
+<div class="timePeriod row">
+    <div class="time col-5"><h3> 12 hour</h3></div>
+    <div class="time col-5"><h3> 14/10</h3></div>
+    <div class="time col-5"><h3> 16/8</h3></div>
+    <div class="time col-5"><h3> 18/6</h3></div>
+    <div class="time col-5"><h3> 5:2</h3></div>
+    <div class="time col-5"><h3> Alternate Day</h3></div>
+    <div class="time col-5"><h3> 24 hours or Eat: Stop: Eat</h3></div>
 </div>
 
     <div class="timeInput">
-    <input type="text" name="" value="" placeholder="Start Time:">
-    <input type="text" name="" value="" placeholder="End Time:">
+      <label for="start-time">Start Time:</label>
+    <input type="number" name="" value="">
+    <label for="end-time">End Time:</label>
+    <input type="number" name="" value="">
+
     <button type="button" name="button"> Check Time</button>
 </div>
-<table id="fasting-details">
-    <tr>
-        <th> Date</th>
-        <th> Hours Fasted</th>
-    </tr>
+<section>
+  <h4>Date:</h4>
+  <h4>Hours Fasted:</h4>
+  <h4>0</h4>
+</section>
 
 
 
