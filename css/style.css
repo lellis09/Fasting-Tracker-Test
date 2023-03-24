@@ -39,7 +39,7 @@ h1{
     
 }
 h2{
-    font-size: 25px;
+    font-size: 2em;
     margin: 2em 0 2em 0;
 }
 
@@ -56,5 +56,16 @@ h3{
 }
 .time{
 	border: solid 1px #5800FF;
+	background: var(--primary-400);
+	color: white;
+	text-align: center;
+	padding: 1em 1em 1em 1em; 
+	/* TODO add some box shadow effects to the buttons */
 	
+}
+
+.convert{
+	background: var(--primary-200);
+	border: none;
+	padding: .5em .5em .5em .5em;
 }
