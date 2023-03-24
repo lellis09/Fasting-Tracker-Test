@@ -11,7 +11,7 @@ let time = 0
 //  endTime.innerText =time
 // }
 
-function addto(){
+function addTo(){
     let startTime = document.getElementById('start').value
     console.log(startTime)
     // time += startTime + 12
