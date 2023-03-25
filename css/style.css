@@ -69,3 +69,13 @@ h3{
 	border: none;
 	padding: .5em .5em .5em .5em;
 }
+/* display for the time */
+.time-display{
+	background: var(--primary-100);
+}
+
+#hour-display,
+#min-display{
+	border: var(--primary-700) 1px solid;
+	width:50%;
+}

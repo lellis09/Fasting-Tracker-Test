@@ -55,7 +55,7 @@
     <h1> When Can I eat?</h1>
     <h2> What's Your Fasting Type?</h2>
 <div class="timePeriod row">
-    <div class="time col-5"><h3> 12 hour</h3></div>
+    <div class="time col-5" onclick="addTwelve()"><h3> 12 hour</h3></div>
     <div class="time col-5"><h3> 14/10</h3></div>
     <div class="time col-5"><h3> 16/8</h3></div>
     <div class="time col-5"><h3> 18/6</h3></div>
@@ -65,17 +65,22 @@
 </div>
 
     <div class="timeInput">
-      <label for="start-time">Start Time:</label>
-    <input id="start" type="time" name="" value="">
-    <label for="end-time">End Time:</label>
-    <input id="end-time" type="number" name="" value="">
+      <h2>Enter the start time of your fast:</h2>
+    <label for="hours">Hours:</label>
+    <input id="hours" type="number" name="" min="0" max="12">
+    <label for="minutes">Minutes:</label>
+    <input id="minutes" type="number" name="" min="0" max="59">
 
     <button class="convert" type="button" name="button" onclick="addTo()"> Check Time</button>
 </div>
 <section>
   <h4>Date:</h4>
   <h4>Hours Fasted:</h4>
-  <h4 id="end">0</h4>
+  <div class="time-display row">
+    <h4 id="hour-display">0</h4>
+    <h4 id="min-display">0</h4>
+  </div>
+  
 </section>
 
 

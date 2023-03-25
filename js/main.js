@@ -1,8 +1,10 @@
 
 // let endTime = document.getElementById('end-time').value
 
-let endDisplay = document.getElementById('end')
-// let userInput = document.getElementById('start')
+let hourDisplay = document.getElementById('hour-display')
+let minDisplay = document.getElementById('min-display')
+let hourTime = 0
+let minTime = 0
 // console.log(endDisplay)
 
 let time = 0
@@ -11,13 +13,34 @@ let time = 0
 //  endTime.innerText =time
 // }
 
-function addTo(){
-    let startTime = document.getElementById('start').value
-    console.log(startTime)
+function addTo(x, y){
+     x= Number(document.getElementById('hours').value)
+     y = Number(document.getElementById('minutes').value)
+    
+    hourTime += x
+    minTime += y
     // time += startTime + 12
-    endDisplay.innerText = startTime
+    // hourDisplay.innerText = hourTime +12
+    // minDisplay.innerText = minTime
     // console.log(endDisplay)
+    console.log(hourTime)
+    console.log(minTime)
+    return (hourTime, minTime)
+    }
+
+function addTwelve(hourTime, minTime){
+    
+    hourDisplay.innerText = hourTime +12
+    minDisplay.innerText = minTime
 }
+
+// function addTo(){
+//     let startTime = document.getElementById('start').value
+//     console.log(startTime)
+//     // time += startTime + 12
+//     endDisplay.innerText = startTime
+//     // console.log(endDisplay)
+// }
 
 // function addto(){
 //     let startTime = Number(document.getElementById('start').value)
