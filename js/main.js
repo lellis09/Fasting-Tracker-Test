@@ -1,37 +1,41 @@
 
-// let endTime = document.getElementById('end-time').value
+
 
 let hourDisplay = document.getElementById('hour-display')
+console.log(hourDisplay)
 let minDisplay = document.getElementById('min-display')
+console.log(minDisplay)
 let hourTime = 0
 let minTime = 0
-// console.log(endDisplay)
 
-let time = 0
-// function increase12(){
-//  time += startTime + 12
-//  endTime.innerText =time
-// }
-
-function addTo(x, y){
-     x= Number(document.getElementById('hours').value)
-     y = Number(document.getElementById('minutes').value)
+function addTo(){
+     let hourInput = Number(document.getElementById('hours').value)
+    //  console.log(hourInput)
+     let minInput = Number(document.getElementById('minutes').value)
+    //  console.log(minInput)
     
-    hourTime += x
-    minTime += y
+    hourTime = hourInput
+    minTime = minInput
     // time += startTime + 12
-    // hourDisplay.innerText = hourTime +12
-    // minDisplay.innerText = minTime
-    // console.log(endDisplay)
-    console.log(hourTime)
-    console.log(minTime)
-    return (hourTime, minTime)
-    }
-
-function addTwelve(hourTime, minTime){
-    
-    hourDisplay.innerText = hourTime +12
+    hourDisplay.innerText = hourTime 
     minDisplay.innerText = minTime
+    // console.log(endDisplay)
+   
+    return (hourTime, minTime)
+ }
+    
+
+function addTwelve(){
+   addTo(hourTime, minTime)
+   let newFast = hourTime + 12
+    hourDisplay.innerText = newFast
+    minDisplay.innerText = minTime
+    console.log(newFast)
+    if(newFast > 12){
+       hourDisplay =  newFast-12
+    }
+    // console.log(hourTime)
+    // console.log(minTime)
 }
 
 // function addTo(){
